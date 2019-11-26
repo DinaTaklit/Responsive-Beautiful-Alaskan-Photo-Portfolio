@@ -1,0 +1,139 @@
+/* 
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif; 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/** Start Hero**/
+
+#hero {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#hero h1,
+#hero h3 {
+    font-size: 28px;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 40px;
+}
+
+#hero h1 {
+    font-size: 62px;
+    margin-bottom: 15px;
+}
+
+#hero a.btn {
+    color: white;
+    text-decoration: none;
+    background-color: #131633;
+    padding: 20px 46px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    border: 2px solid white;
+}
+
+#hero a.btn:hover {
+    background-color: #2196f3;
+}
+
+
+/** End Hero**/
+
+
+/* Start Footer */
+
+footer {
+    background-color: #131622;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, #284e7a, #000 100%);
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin: 0 8px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 6);
+    margin-bottom: 10px;
+}
+
+
+/* END Footer */
+
+
+/* Start Responsive */
+
+@media(max-width:800px) {
+    /** For the here**/
+    /* We do not want the image once the width is less then 800px to tak all the page so we fixed the hight to 600px*/
+    #hero {
+        min-height: 600px;
+    }
+    #hero h1 {
+        font-size: 36px;
+    }
+    #hero h3 {
+        font-size: 18px;
+    }
+    #hero a.btn {
+        padding: 15px 40px;
+    }
+    /** For the footer**/
+    footer {
+        padding: 80px 15px;
+    }
+}
+
+
+/* End Responsive */
