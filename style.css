@@ -22,6 +22,30 @@ h6 {
     font-family: 'Oswald', sans-serif;
 }
 
+a {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+h3.title {
+    color: #131633;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin: 40px auto;
+}
+
 
 /** Start Hero**/
 
@@ -69,6 +93,32 @@ h6 {
 }
 
 
+/* Start Responsive */
+
+@media(max-width:800px) {
+    /* We do not want the image once the width is less then 800px to take all the page so we fixed the hight to 600px*/
+    #hero {
+        min-height: 600px;
+    }
+    #hero h1 {
+        font-size: 36px;
+    }
+    #hero h3 {
+        font-size: 18px;
+    }
+    #hero a.btn {
+        padding: 15px 40px;
+    }
+    /** For the footer**/
+    footer {
+        padding: 80px 15px;
+    }
+}
+
+
+/* End Responsive */
+
+
 /** End Hero**/
 
 
@@ -78,14 +128,6 @@ h6 {
     padding: 10px;
     background-color: #f7f7f7;
     margin-bottom: 20px;
-}
-
-h3.title {
-    color: #131633;
-    text-transform: capitalize;
-    font-size: 32px;
-    margin-bottom: 35px;
-    text-align: center;
 }
 
 #about #two-cols {
@@ -106,16 +148,80 @@ h3.title {
     margin-left: 20px;
 }
 
-hr {
-    width: 150px;
-    height: 2px;
-    background-color: #2196f3;
-    border: 0;
-    margin: 40px auto;
+
+/** Responsive Part ***/
+
+@media(max-width:800px) {
+    #about,
+    #two-cols {
+        flex-direction: column;
+    }
+    .about-bio {
+        margin-top: 20px;
+        line-height: 125%;
+        text-align: left;
+    }
 }
 
 
 /********************** END  About *********************/
+
+
+/********************** Start  Gallery *********************/
+
+#gallery {
+    background-color: #fff;
+}
+
+#gallery ul.grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery ul.grid li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-position: center;
+    background-size: cover;
+    background-color: #333;
+}
+
+#gallery ul.grid li.small {
+    flex-basis: 40%
+}
+
+#gallery ul.grid li.large {
+    flex-basis: 60%
+}
+
+#gallery p {
+    max-width: 800px;
+    text-align: center;
+    line-height: 125%;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+}
+
+
+/*** Start Responsive ***/
+
+@media(max-width: 1000px) {
+    #gallery .grid li.small,
+    #gallery .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
+
+/*** END Responsive ***/
+
+
+/********************** END  Gallery *********************/
 
 
 /* Start Footer */
@@ -156,44 +262,3 @@ footer p {
 
 
 /* END Footer */
-
-
-/* Start Responsive */
-
-@media(max-width:800px) {
-    /** For the hero**/
-    /* We do not want the image once the width is less then 800px to tak all the page so we fixed the hight to 600px*/
-    #hero {
-        min-height: 600px;
-    }
-    #hero h1 {
-        font-size: 36px;
-    }
-    #hero h3 {
-        font-size: 18px;
-    }
-    #hero a.btn {
-        padding: 15px 40px;
-    }
-    /** For the footer**/
-    footer {
-        padding: 80px 15px;
-    }
-}
-
-@media(max-width:800px) {
-    /*** Start About Section  ***/
-    #about,
-    #two-cols {
-        flex-direction: column;
-    }
-    .about-bio {
-        margin-top: 20px;
-        line-height: 125%;
-        text-align: left;
-    }
-    /*** End  About Section  ***/
-}
-
-
-/* End Responsive */
