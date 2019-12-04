@@ -26,6 +26,7 @@ h6 {
 /** Start Hero**/
 
 #hero {
+    min-height: 100vh;
     background-color: gray;
     color: white;
     text-align: center;
@@ -36,7 +37,6 @@ h6 {
     background-image: url('img/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
 }
 
 #hero h1,
@@ -70,6 +70,52 @@ h6 {
 
 
 /** End Hero**/
+
+
+/********************** Start About *********************/
+
+#about {
+    padding: 10px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+h3.title {
+    color: #131633;
+    text-transform: capitalize;
+    font-size: 32px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+#about #two-cols {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img {
+    border: 4px solid #2196f3;
+    background-color: #2196f3;
+}
+
+.about-bio {
+    width: 65%;
+    max-width: 800px;
+    line-height: 150%;
+    margin-left: 20px;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin: 40px auto;
+}
+
+
+/********************** END  About *********************/
 
 
 /* Start Footer */
@@ -115,7 +161,7 @@ footer p {
 /* Start Responsive */
 
 @media(max-width:800px) {
-    /** For the here**/
+    /** For the hero**/
     /* We do not want the image once the width is less then 800px to tak all the page so we fixed the hight to 600px*/
     #hero {
         min-height: 600px;
@@ -133,6 +179,20 @@ footer p {
     footer {
         padding: 80px 15px;
     }
+}
+
+@media(max-width:800px) {
+    /*** Start About Section  ***/
+    #about,
+    #two-cols {
+        flex-direction: column;
+    }
+    .about-bio {
+        margin-top: 20px;
+        line-height: 125%;
+        text-align: left;
+    }
+    /*** End  About Section  ***/
 }
 
 
