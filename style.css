@@ -55,7 +55,7 @@ ul.grid {
 }
 
 
-/** Start Hero**/
+/******************** Start Hero ********************/
 
 #hero {
     min-height: 100vh;
@@ -127,7 +127,7 @@ ul.grid {
 /* End Responsive */
 
 
-/** End Hero**/
+/*************** End Hero ********************************/
 
 
 /********************** Start About *********************/
@@ -218,6 +218,9 @@ ul.grid {
 }
 
 
+/********************** END  Gallery *********************/
+
+
 /********************** Start  Getting Araound ***************/
 
 #getting-around {
@@ -277,9 +280,6 @@ ul.grid {
 
 /********************** Start Famous Quotes *****************/
 
-
-/********************** End Famous Quotes *****************/
-
 #famous-quotes {
     text-align: center;
     background-color: #fafafa;
@@ -313,7 +313,7 @@ ul.grid {
 }
 
 
-/**************** Start Responsive **********************/
+/******* Start Responsive ***********/
 
 @media(max-width: 1000px) {
     #famous-quotes p.quote {
@@ -326,13 +326,32 @@ ul.grid {
 }
 
 
-/**************** End Responsive **********************/
+/******* End Responsive *****/
 
 
-/*** END Responsive ***/
+/********************** End Famous Quotes *****************/
 
 
-/********************** END  Gallery *********************/
+/********************** Start Contact *****************/
+
+section.flexbox-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.flexbox-section p {
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+
+/********************** End Contact *****************/
 
 
 /* Start Footer */
