@@ -77,7 +77,7 @@ header a {
     opacity: .6;
 }
 
-header a {
+header a:hover {
     opacity: 1;
 }
 
